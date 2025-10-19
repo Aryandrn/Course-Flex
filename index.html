@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <div class="container">
-    <h3>Course Flexbox</h3>
-    <div class="row row_1"></div>
-    <div class="row row_2"></div>
-    <div class="row row_3"></div>
-    <style>
+        <style>
     body{
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height:100vh;
-    color: white;
-    background-color: white; }
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); 
+}
+
     .container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
     height: 400px;
-    background-color: black; }
+    flex-direction: column;
+    /* background-color:green; */
+    gap:5px ; }
+    
+    .row{
+    width:100%;
+    height:100%;
+    background-color: red;
+}
+   .row_1{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    gap: 5px;
+}
+
+.child-left{
+    width: 70%;
+    background-color: aqua;
+}
+.child-right{width:30% ;
+background-color: aqua;}
     </style>
+</head>
+<body>
+<div class="container">
+    <div class="row row_1">
+        <div class="child child-left"></div>
+        <div class="child child-right"></div>
+    </div>
+    <div class="row row_2"></div>
+    <div class="row row_3"></div>
+</div>
+
 </body>
 </html>
